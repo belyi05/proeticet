@@ -49,7 +49,7 @@
       <!-- BEGIN LOGO -->
       <div id="logo"><a href="{site_url('')}"><img src="{$THEME}/images/logo.png" alt="logo" border="0"/></a></div>
       <!-- BEGIN SLOGAN -->
-      <div id="slogan">Наша компания бесспорно лучшая в галактике! Мы мастера!</div>
+      <div id="slogan hop">Наша компания бесспорно лучшая в галактике! Мы мастера!</div>
     </div>
     <div class="right">
     	Тел. (097) 772-22-22<br />Тел. моб. (097) 772-22-22
