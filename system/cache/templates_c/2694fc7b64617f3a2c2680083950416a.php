@@ -1,0 +1,1 @@
+<li class="home"><a href="<?php if(isset($link)){ echo $link; } ?>" title="<?php if(isset($title)){ echo $title; } ?>"><?php if(isset($title)){ echo $title; } ?></a><?php if(isset($wrapper)){ echo $wrapper; } ?></li><?php $mabilis_ttl=1351619504; $mabilis_last_modified=1346759316; //C:\www\simpla.loc\www\/templates/default/main_menu/level_0/item_first_active.tpl ?>
