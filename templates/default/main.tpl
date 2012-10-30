@@ -85,7 +85,7 @@
     {foreach $cats as $cat}
     {$count_ = 0}
     {if !$cat.parent_id}
-    <li{if $count_ == 0} class="first" {/if}>
+    <li{if $cat.id == $page.category} class="active" {/if}>
     <a href="{$cat.url}"
     {if $cat.id == $category.id} class="active" {/if}>{$cat.name}
 </a>
@@ -128,16 +128,18 @@
 </div><!-- #header-->
 <div class="tabsBar">
     <ul>
-        {load_menu('main_menu')}
-        <li><a href="/" class="pid1571" rel="nofollow">Главная</a></li>
-        <li><a href="http://www.proeticet.ru/1_menu_obshenie.php" rel="nofollow">Речевой</a></li>
-        <li><a href="http://www.proeticet.ru/2_menu_za_stolom.php" rel="nofollow">За столом</a></li>
-        <li><a href="http://www.proeticet.ru/3_menu_delovoy_etiket.php" rel="nofollow">Деловой</a></li>
-        <li><a href="http://www.proeticet.ru/4_menu_podarok.php" rel="nofollow">Подарки</a></li>
-        <li><a href="http://www.proeticet.ru/5_menu_odezhda.php" rel="nofollow">Стиль</a></li>
-        <li><a href="http://www.proeticet.ru/10_menu_deti.php" rel="nofollow">Дети</a></li>
-        <li><a href="http://www.proeticet.ru/11_menu_ofis.php" rel="nofollow">Офис</a></li>
-        <li><a href="http://www.proeticet.ru/12_menu_obyichai.php" rel="nofollow">Традиции</a></li>
+
+
+        {$cats = category_list_()}
+        {foreach $cats as $cat}
+        {$count_ = 0}
+        {if !$cat.parent_id}
+        <li{if $cat.id == $page.category} class="active" {/if}>
+        <a href="{$cat.url}"
+        {if $cat.id == $category.id} class="active" {/if}>{$cat.name}
+    </a>
+</li>{/if}
+    {/foreach}
         <li><form action="http://www.proeticet.ru/search.htm" id="cse-search-box" style="padding-left:13px;background-color:#589442;padding-bottom:3px;padding-right:18px;"></li>
 
             <input type="hidden" name="cx" value="partner-pub-7888413920772717:tlb8sn-s22z" />
@@ -174,10 +176,15 @@ google_ad_height = 15;
         Хлебные крошки
 
 
-        {if $page_type == 'main'}хоп{/if}
+        {if $page_type == 'main'}
+
+        {widget('cats_main_page')}
 
 
 
+        {/if}
+
+        {widget('banners_vse_mayki')}
         <div style="float:left;padding-right:10px;">
             <!-- Put this script tag to the <head> of your page -->
           {literal}  <script type="text/javascript" src="http://vkontakte.ru/js/api/openapi.js?20" charset="windows-1251"></script>
@@ -201,34 +208,7 @@ google_ad_height = 15;
 
         </div>
         <br>
- {literal}
-        <?php
 
-                $banner_[]='<a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/1/banners_b_331_468x60_valentine.gif" height="60" width="468" border=0 ></a>';
-                $banner_[]=' <a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/2/banners_b_332_500x100_valentine.gif" height="100" width="500" border=0 ></a>';
-
-                $banner_[]='<a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/5/banners_b_265_468x60_constructor.gif" height="60" width="468" border=0 ></a>';
-
-                $banner_[]='<a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/7/banners_b_157_600h80.gif" height="80" width="600" border=0 ></a>';
-
-                $banner_[]='<a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/7/banners_b_277_468x60.gif" height="60" width="468" border=0 ></a>';
-
-                $banner_[]= '<a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/3/banners_b_203_468x60_8-march.gif" height="60" width="468" border=0 ></a>';
-
-                $banner_[]='<a href="http://www.vsemayki.ru/?ref=4714" target="_blank"><img src="http://partners.vsemayki.ru/img/saved/6/banners_b_306_728x90_sexy_okt11_1.gif" height="90" width="728" border=0 ></a>';
-
-
-
-
-                shuffle($banner_);
-                for ($i = 0; $i <1; $i++)
-                {
-                echo $banner_[$i]." ";
-                }
-
-
-                ?>
-        {/literal}
 
 
         <div class="google">

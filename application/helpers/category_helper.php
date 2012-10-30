@@ -49,6 +49,28 @@ if (!function_exists('category_list'))
     }
 }
 
+if (!function_exists('category_list_'))
+{
+    function category_list_()
+    {
+        $ci =& get_instance();
+        $ci->load->helper('html');
+        $ci->load->module('core');
+        $categories = $ci->lib_category->unsorted();
+
+        $result = array();
+
+        foreach($categories as $category)
+               {
+
+                       $result[] = $category;
+
+               }
+
+        return $result;
+    }
+}
+
 if (!function_exists('sub_category_list'))
 {
     function sub_category_list($category_id = 0)
@@ -98,6 +120,22 @@ if (!function_exists('get_category_name'))
         }
 
         return $c['name'];
+    }
+}
+
+if (!function_exists('get_category_url'))
+{
+    function get_category_url($id)
+    {
+        $ci =& get_instance();
+        $c = $ci->lib_category->get_category($id);
+
+        if ($c['url'] == '')
+        {
+            $c['url'] = '/';
+        }
+
+        return $c['url'];
     }
 }
 
