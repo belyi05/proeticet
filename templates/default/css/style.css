@@ -44,7 +44,7 @@ input {
 -----------------------------------------------------------------------------*/
 #header {
 	height: 200px; 
-	background:url(img/header.jpg) left no-repeat;
+	background:url(http://www.proeticet.ru/img/header.jpg) left no-repeat;
 }
 
 
@@ -173,9 +173,9 @@ label{font-weight:700;}
 
  
 
-#logo{background:url(img/logo.png) left no-repeat;width:210px; height:102px;float:left;margin-top:40px;}
+#logo{background:url(http://www.proeticet.ru/img/logo.png) left no-repeat;width:210px; height:102px;float:left;margin-top:40px;}
 
-#logo:hover{background:url(img/logo_hover.png) left no-repeat;width:210px; height:102px;float:left;margin-top:40px;}
+#logo:hover{background:url(http://www.proeticet.ru/img/logo.png) left no-repeat;width:210px; height:102px;float:left;margin-top:40px;cursor: pointer;}
  
  
 .anons_left a{color:blue;text-decoration:underline;}
@@ -236,5 +236,14 @@ h3{padding-top:10px;}
 .demo ul {list-style-type:none;}
 .al{font-size:12px;}
 #index_table_{width:730px;}
-
+#sideLeft .menu ul>ul{padding-left: 10px;}
+#sideLeft .menu .active{font-weight: 700; }
+#sideLeft .menu ul >ul .active{
+border-top: 1px solid #DEE2BE;
+color: #09532D;
+display: block;
+padding: 5px 0px 5px 10px;}
+/*#sideLeft .menu ul > .active a:after{content: '\2193';}
+#sideLeft .menu ul >ul .active:before{content: '\2192';}*/
+.postinfo{float:right;}
 #index_table_ li {float:left; display: inline;text-align:center;}#index_table_ li img{height:116px;width:105px;background: #CCC;border: 2px solid #EEE;border-right: 2px solid #ccc;padding-bottom: 2px;padding-right: 2px;}#index_table_ ul li{background:none;padding:0px;}
