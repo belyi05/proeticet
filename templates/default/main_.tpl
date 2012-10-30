@@ -44,8 +44,8 @@
           	</div>
         </div>    
     </div>
-    
-    <div class="left">
+
+      <div class="left">
       <!-- BEGIN LOGO -->
       <div id="logo"><a href="{site_url('')}"><img src="{$THEME}/images/logo.png" alt="logo" border="0"/></a></div>
       <!-- BEGIN SLOGAN -->
