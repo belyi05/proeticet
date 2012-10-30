@@ -1,249 +1,252 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin:0;
+    padding:0;
 }
 html {
-	height: 100%;
+    height:100%;
 }
 body {
-	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
-	width: 100%;
-	height: 100%;
-	color:#2c2c2c;background:#e3e3e3;
-	
+    font:12px/18px Arial,Tahoma,Verdana,sans-serif;
+    width:100%;
+    height:100%;
+    color:#2c2c2c;
+    background:#e3e3e3;
 }
 a {
-	color: blue;
-	outline: none;
-	text-decoration: underline;
+    color:#1F8FCA;
+    outline:none;
+    text-decoration:underline;
 }
 a:hover {
-	text-decoration: none;
-	color:#bd2c17;
+    text-decoration:none;
+    color:red;
 }
-p {
-	margin: 0 0 18px
-}
+
 img {
-	border: none;
+    border:none;
+    vertical-align:text-top;
+    padding:0 5px;
 }
-input {
-	vertical-align: middle;
+
+p {
+    margin-bottom:10px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    font-family:Georgia;
+    font-weight: bold;
+    line-height: 1;
+    color: #007538;
+    text-rendering: optimizelegibility;
+}
+
+h1 {
+    font-size:20px;
+}
+
+h2 {
+    font:18px georgia;
+}
+
+h3 {
+    font: 16px Georgia;
+}
+
+.pull_left {
+    float:left;
+}
+
+.pull-right{
+    float:right;
+}
+
+.none_decoration a{
+    text-decoration: none;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 #wrapper {
-	width: 1280px;
-	margin: 0 auto;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	border:#ccc solid 1px;
+    width:1280px;
+    margin:0 auto;
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+    border: #ccc solid 1px;
 }
-
-
-/* Header
------------------------------------------------------------------------------*/
+/* Header-----------------------------------------------------------------------------*/
 #header {
-	height: 200px; 
-	background:url(http://www.proeticet.ru/img/header.jpg) left no-repeat;
+    height:200px;
+    background:url(http://www.proeticet.ru/img/header.jpg) left no-repeat;
 }
-
-
-/* Middle
------------------------------------------------------------------------------*/
+#logo {
+    background:url(http://www.proeticet.ru/img/logo.png) left no-repeat;
+    width:210px;
+    height:102px;
+    float:left;
+    margin-top:40px;
+}
+#logo:hover {
+    cursor:pointer;
+}
+/* Middle-----------------------------------------------------------------------------*/
 #middle {
-	width: 100%;
-	padding: 0 0 100px;
-	height: 1%;
-	background-color:white;
+    width:100%;
+    padding:0 0 100px;
+    height:1%;
+    background-color:white;
 }
 #middle:after {
-	content: '.';
-	display: block;
-	clear: both;
-	visibility: hidden;
-	height: 0;
+    content:'.';
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
 }
 #container {
-	width: 100%;
-	float: left;
-	overflow: hidden;
+    width:100%;
+    float:left;
+    overflow:hidden;
 }
+
+.tabsBar ul li{display: inline;padding-left: 0;}
+.tabsBar ul li a {
+    display:inline-block;
+    background-color:#589442;
+    line-height:14px;
+    color:#fff;
+    font-size:14px;
+    padding:8px 12px 7px;
+    text-decoration: none;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.tabsBar ul li a:hover,.tabsBar ul li a:active {
+    background:#007f3f;
+    -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
 #content {
-	padding: 0 270px 0 240px;
-	background-color:#fff;
+    padding:0 270px 0 240px;
+    background-color: #fff;
 }
 
+#index_table_ li {
+    float:left;
+    display:inline;
+    text-align:center;
+}
 
-/* Sidebar Left
------------------------------------------------------------------------------*/
+/* Sidebar Left-----------------------------------------------------------------------------*/
 #sideLeft {
-	float: left;
-	width: 230px;
-	margin-left: -100%;
-	position: relative;
-	border:1px solid #ccc;background-color:#edecd4;border-width:1px 0;
-	font:14px Tahoma;
+    float:left;
+    width:230px;
+    margin-left:-100%;
+    position:relative;
+    border:1px solid #ccc;
+    background-color:#edecd4;
+    border-width:1px 0;
 }
- 
- .no_active_menu {background-color:#EDECD4;}
-.all_articles {color:#fff;}
-.active_url a, #active_razdel {font-weight:700;}
-#active_razdel{background-color:#f69639;}
-.active_url a{margin-right:15px;}
- 
-#sideLeft ul li {list-style-type:none;padding-left:10px;}
-#sideLeft  ul li a{border-top:1px solid #dee2be;color:#09532d;display:block;padding:2px 2px 5px 0px;}
-#sideLeft   ul li a:hover{background-color:#f6f6ea;text-decoration:none;}
+.menu ul li{list-style-type: none;}
 
-/* Sidebar Right
------------------------------------------------------------------------------*/
+#sideLeft ul li a {
+    border-top:1px solid #dee2be;
+    color:#09532d;
+    display:block;
+
+    padding:5px 5px 5px 10px;
+}
+#sideLeft ul li a:hover {
+    background-color:#f6f6ea;
+    text-decoration: none;
+}
+
+#sideLeft .menu ul>ul {
+    padding-left:10px;
+}
+#sideLeft .menu .active {
+    font-weight:700;
+}
+#sideLeft .menu ul>ul .active {
+    border-top:1px solid #DEE2BE;
+    color:#09532D;
+    display:block;
+    padding:5px 0px 5px 10px;
+}
+/*#sideLeft .menu ul>.active a:after {
+content:'\2193';
+}
+#sideLeft .menu ul>ul .active:before {
+content: '\2192';
+}
+*/
+/* Sidebar Right-----------------------------------------------------------------------------*/
 #sideRight {
-	float: left;
-	margin-right: -3px;
-	width: 260px;
-	margin-left: -260px;
-	position: relative;
-	font-size:14px; 
-	background:#EDECD4;
-	
+    float:left;
+    margin-right:-3px;
+    width:240px;
+    margin-left:-260px;
+    position:relative;
+    font-size:14px;
+    background:#EDECD4;
+    padding:0 10px;
 }
-#sideRight h3{background:none;padding-left:10px;padding-top:10px;font:20px Georgia;}
+.fact {
+    height: 80px;
+    border-bottom:1px solid #DEE2BE;
+    padding-top:10px;
+    color:#09532D;
+    -webkit-transition: All 0.1s ease;
+    -moz-transition: All 0.1s ease;
+    -o-transition: All 0.1s ease;
+    outline:2px solid transparent;
+}
 
-/* Footer
------------------------------------------------------------------------------*/
+.fact:hover {
+    background-color: #F6F6EA;
+    cursor:pointer;
+    color: red;
+    border-bottom: none;
+    outline:2px solid #1F8FCA;
+}
+
+.page_showed{
+    font-size: 12px;
+    color:#808080;
+}
+
+
+/* Footer-----------------------------------------------------------------------------*/
 #footer {
-	width: 1000px;
-	margin: -100px auto 0;
-	height: 100px;
- 
+    width:1000px;
+    margin:-100px auto 0;
+    height:100px;
 }
 
-.box img{border-bottom:2px solid #eee;
-border-right:2px solid #eee;
-padding-bottom:2px;
-padding-right:2px;
-background:#ccc;
-float:left;
-}
-.param{font:10px Verdana;color:#aaa;padding-left:10px;}
- .span_short{margin-left:10px;font:16px Georgia;}
-table{border-collapse:collapse;border-spacing:0;}
-.tabsBar ul{list-style:none;}
-h1{font-size:18px;color:#007538;font-family:Georgia;font-weight:300;}
-p{margin-bottom:12px;}
-
- 
-a,a:active{color:blue;text-decoration:none;outline:none;}
- 
-table tbody{border-collapse:collapse;margin:0;padding:0;}
-table tbody td{vertical-align:top;}
-img{vertical-align:text-top;}
-input{vertical-align:text-top;outline:none;}
-
-
- 
-
-h2{background: url(/templates/images/delimiter.gif) bottom no-repeat;padding: 17px 0 0;font: 18px georgia;color:black;}
- 
- 
- 
- 
- .tabsBar ul li{margin-right:2px;float:left;}
- .tabsBar ul li a{display:block;background-color:#589442;line-height:14px;color:#fff;font-size:14px;padding:8px 12px 7px;}
- .tabsBar ul li a:link, .tabsBar ul li a:visited, .tabsBar ul li a:hover, .tabsBar ul li a:active{text-decoration:none;}
-  .tabsBar ul li a:hover, .tabsBar ul li a:active{background:#82bb6d;}
-.tabsBar form{float:right;}
-   
-#com{border:1px dotted green;background-color:#F3F6EB;}
-form input,form textarea{margin-top:5px;}
- 
-#my_com{width:550px;margin-top:10px;}
-#DIV_NNN_6612{font-size:10px;border:1px dotted green;}
-.copyright{color:white;font-size:95%;font-weight:500;margin-left:300px;}
-body,div,ul,li,h1,h2,form,input,textarea,p,td{margin:0;padding:0;}
-a:hover,a:focus,.fkLnk:hover{text-decoration:underline;}
-label{font-weight:700;}
- 
- 
-.interior img{border:2px solid #c0d19d;}
-
- 
-
-.box {background:#EDECD4;overflow:hidden;min-height:80px;border-bottom:solid 1px green;}
-
- 
-
-#logo{background:url(http://www.proeticet.ru/img/logo.png) left no-repeat;width:210px; height:102px;float:left;margin-top:40px;}
-
-#logo:hover{background:url(http://www.proeticet.ru/img/logo.png) left no-repeat;width:210px; height:102px;float:left;margin-top:40px;cursor: pointer;}
- 
- 
-.anons_left a{color:blue;text-decoration:underline;}
-.anons_left img {border: solid 1px #4756AB;padding:5px;width:80px; height:60px;float:left;margin-right:5px;}
-.anons_left{font-size:12pt;margin-left:15px;border-top:solid 1px white;min-height:75px;width:230px;text-align:left;font-variant:small-caps;}
-.anons_left:hover{background-color:#eee;}
-
- }
- 
- #my_cont ul{padding-left:50px;padding-bottom:10px;padding-right:10px;outline:none;}
 
 
 
-   #my_cont ul li{padding-bottom:5px;padding-top:5px;outline:none;font: 14px Verdana;background:url(/templates/images/li.jpg) left no-repeat;padding: 0px 0px 7px 27px;list-style-type:none;}
 
- 
 
-#my_cont ul,ol{padding-left:20px;padding-bottom:10px;padding-right:10px;outline:none;}
 
-  #my_cont ol li{padding:5px;outline:none;font: 14px tahoma;}
 
-   #my_cont ul li{padding-bottom:5px;padding-top:5px;outline:none;font: 14px tahoma;}
-
-    #my_cont p{font: 14px tahoma;padding:10px;line-height: 1.5;}
- 
-#bread{background: url(/templates/imagdes/poloska.gif) 0% 0%;font:16px;font-weight:700;opacity:0.9;padding:10px 0px;}
-#bread a{text-decoration:underline;font-weight:300;}
-#popul{margin-top:10px;}
-#popul h5{font:16px Georgia;padding-top:30px;padding-bottom:10px;}
-#popul  ul li{background:url(templates/images/popul.png) no-repeat;padding-left:5px;padding-top:5px;}
-.digit{font: normal normal normal 24px/29px Georgia;float:right;padding-right:5px;color:red;}
-.podrazdel{font-size:12px; color: #000;text-decoration:underline;}
- 
-#popul ul li img{height:80px;border-bottom:2px solid #eee;
-border-right:2px solid #eee;
-padding-bottom:2px;
-padding-right:2px;
-background:#ccc;
-margin-top:5px;margin-left:5px; float:center;margin-left:25px;}
-#popul ul li{font:14px verdana;}
-.last_com{padding-left:5px;padding-top:5px;font-style:italic;}.last_com a {font-style:normal;color:#900;}
-#footer p{text-align:right;padding-right:10px;font:14px Verdana;padding-top:10px;}
-#footer{background: url(/templates/images/delimiter.gif) top repeat-x;padding-left:150px;}
-.nnn_teaser_title{text-align:center;}
-.remember{float:right;width:200px;display:block;padding:10px;color:red;}
- quote {font-style:italic;font-size:14px;color:green;}
-.fact img{float:left;background: #CCC;
-border: 2px solid #EEE;
-border-right: 2px solid #ccc;
-padding-bottom: 2px;
-padding-right: 2px;
-margin-right:5px;} 
-.fact{height:100px;border-bottom:solid 1px green;padding-left:10px;padding-top:10px;text-decoration:none;color:#646f61;}
-.fact span{text-decoration:underline;color:#00618E;}
-.fact span:hover{text-decoration:none;}
-.fact:hover{cursor: pointer;text-decoration:none;color:red;}
-h3{padding-top:10px;}
-.demo ul {list-style-type:none;}
-.al{font-size:12px;}
-#index_table_{width:730px;}
-#sideLeft .menu ul>ul{padding-left: 10px;}
-#sideLeft .menu .active{font-weight: 700; }
-#sideLeft .menu ul >ul .active{
-border-top: 1px solid #DEE2BE;
-color: #09532D;
-display: block;
-padding: 5px 0px 5px 10px;}
-/*#sideLeft .menu ul > .active a:after{content: '\2193';}
-#sideLeft .menu ul >ul .active:before{content: '\2192';}*/
-.postinfo{float:right;}
-#index_table_ li {float:left; display: inline;text-align:center;}#index_table_ li img{height:116px;width:105px;background: #CCC;border: 2px solid #EEE;border-right: 2px solid #ccc;padding-bottom: 2px;padding-right: 2px;}#index_table_ ul li{background:none;padding:0px;}

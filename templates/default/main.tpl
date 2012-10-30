@@ -6,9 +6,12 @@
     <meta name="keywords" content="{$site_keywords}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="robots" content="all">
-    <link rel="stylesheet" href="{$THEME}/css/style.css" type="text/css" media="screen" charset="utf-8">
+     <link rel="stylesheet" href="{$THEME}/css/styles.css" type="text/css" media="screen" charset="utf-8">
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
     {widget('GA')}
+    <link rel="stylesheet/less" type="text/css" href="{$THEME}/css/styles.less">
+    <script src="http://lesscss.ru/js/less.js" type="text/javascript"></script>
     <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon"/>
 </head>
 <body>
@@ -35,9 +38,9 @@
 
                 {//widget('banners_vse_mayki_gor')}
                 <div class="google">
-                    <div style="padding:10px;">
+
                         {//widget('Ads_336_280')}
-                    </div>
+
                 </div>
 
                     {$content} {literal} <?php
@@ -56,11 +59,14 @@
         <div class="sidebar" id="sideLeft">
             {widget('sideleft_menu')}
         </div>
+
+
         <!-- .sidebar#sideLeft -->
         <div class="sidebar" id="sideRight">
             <h3>Лучшие за неделю</h3>
             {widget('top_views')}
         </div>
+
         <!-- .sidebar#sideRight -->
     </div>
     <!-- #middle-->

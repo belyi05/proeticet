@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu none_decoration">
 <ul>
     {$cats = category_list_()}
     {foreach $cats as $cat}

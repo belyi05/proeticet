@@ -7,7 +7,7 @@
     <li>
     <a href="{$cat.url}"
     {if $cat.id == $category.id} class="active" {/if}>
-    <img src="{site_url()}{$cat.image}" alt="" />
+    <img src="{site_url()}{$cat.image}" alt="" style="height:116px; "/>
         <p>{$cat.name}</p>
 </a>
         </li>{/if}
@@ -15,3 +15,4 @@
         {/foreach}
 </ul>
         </div>
+        <div class="clearfix"></div>

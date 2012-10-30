@@ -19,11 +19,11 @@
 
 {$page.prev_text}
 
-<div class="postinfo">
-    Просмотров: {$page.showed}
+<div class="postinfo pull-right">
+     <img src="http://shkolazhizni.ru/i/icons/ico_views.png" style="padding:0;" alt=""/>{$page.showed}
     <a href="{site_url($page.full_url)}">{lang('full_article')}</a>
 </div>
-
+<div class="clearfix"></div>
 <div style="border-bottom:1px solid #ECECEC;">
     &nbsp;
 </div>
