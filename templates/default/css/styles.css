@@ -27,6 +27,7 @@ a:hover {
 }
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 .clearfix:after {
   clear: both;
@@ -43,7 +44,7 @@ html {
 .pull-right {
   float: right;
 }
-.pull_left {
+.pull-left {
   float: left;
 }
 p {
@@ -58,7 +59,7 @@ body {
   font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
   width: 100%;
   height: 100%;
-  color: #2c2c2c;
+  color: #111C0D;
   background: #e3e3e3;
   font-size: 14px;
 }
@@ -161,6 +162,7 @@ h3 {
   border-width: 1px 0;
 }
 #sideLeft ul li a {
+  text-decoration: none;
   border-top: 1px solid #dee2be;
   color: #09532d;
   display: block;
@@ -208,7 +210,10 @@ h3 {
   cursor: pointer;
   color: red;
   border-bottom: none;
-  outline: 5px solid #1F8FCA;
+  outline: 2px solid #1F8FCA;
+}
+.top-views img {
+  width: 90px;
 }
 .page_showed {
   font-size: 12px;
@@ -219,4 +224,7 @@ h3 {
   width: 1000px;
   margin: -100px auto 0;
   height: 100px;
+}
+#footer div {
+  padding: 10px;
 }

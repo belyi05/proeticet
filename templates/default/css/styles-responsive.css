@@ -1,0 +1,134 @@
+
+/* --------- Адаптивная верстка ------- */
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.visible-phone {
+    display: none !important;
+}
+
+.visible-tablet {
+    display: none !important;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
+.visible-desktop {
+    /*display: inherit !important;*/
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .hidden-desktop {
+        /*  display: inherit !important;*/
+    }
+    .visible-desktop {
+        display: none !important ;
+    }
+    .visible-tablet {
+        /*  display: inherit !important;*/
+    }
+    .hidden-tablet {
+        display: none !important;
+    }
+
+    #wrapper{width:100% !important;}
+    #sideRight {
+        float:left;
+        margin-right:-3px;
+        width: 120px !important;
+        margin-left:-130px !important;
+        position:relative;
+        font-size:12px !important;
+        background:#EDECD4;
+        padding:0 5px !important;
+    }
+
+    .top-views img{
+        display: none; !important;
+    }
+}
+
+@media (max-width: 979px) {
+
+    #content {
+        padding: 0 140px 0 140px !important;
+
+    }
+
+    #sideLeft{
+        font-size: 12px !important;
+        width: 130px !important;
+
+    }
+}
+
+
+@media (max-width: 767px) {
+    .hidden-desktop {
+        display: inherit !important;
+    }
+    .visible-desktop {
+        display: none !important;
+    }
+    .visible-phone {
+        display: inherit !important;
+    }
+    .hidden-phone {
+        display: none !important;
+    }
+
+    #wrapper{  width: 100% !important;}
+    #sideRight{display: none;}
+    #content {
+
+        padding: 0 10px 0 140px !important;
+    }
+
+    #sideLeft{
+        font-size: 11px !important;
+        width: 130px !important;
+
+    }
+
+    .tabsBar ul li a {
+        display: inline-block;
+        background-color: #589442;
+        line-height: 11px;
+        color: white;
+        font-size: 11px !important;
+        padding: 4px 6px 4px !important;
+        text-decoration: none;
+        text-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    }
+
+}
+
+
+@media (min-width: 980px) {
+
+    #wrapper{width:1000px !important;}
+}
+
+@media (min-width:1200px) {
+#wrapper{width:1200px !important;}
+
+    }
+
+@media (max-width: 480px) {
+    #footer {
+       display: none;
+    }
+}

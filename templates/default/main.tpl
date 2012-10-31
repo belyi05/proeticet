@@ -6,7 +6,9 @@
     <meta name="keywords" content="{$site_keywords}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="robots" content="all">
-     <link rel="stylesheet" href="{$THEME}/css/styles.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="{$THEME}/css/styles-responsive.css" type="text/css" media="screen" charset="utf-8">
+
+    <link rel="stylesheet" href="{$THEME}/css/styles.css" type="text/css" media="screen" charset="utf-8">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
     {widget('GA')}
@@ -56,7 +58,7 @@
             <!-- #content-->
         </div>
         <!-- #container-->
-        <div class="sidebar" id="sideLeft">
+        <div class="sidebar " id="sideLeft">
             {widget('sideleft_menu')}
         </div>
 
@@ -73,6 +75,7 @@
 </div>
 <!-- #wrapper -->
 <div id="footer">
+    <div>
     <p>
         Копировать материалы с нашего сайта ЗАПРЕЩЕНО. © 2007-2011 belyi05
     </p>
@@ -80,6 +83,7 @@
         <a href="http://www.proeticet.ru/privacy.html">Политика конфиденциальности</a>
     </p>
     {widget('liveinternet')}
+    </div>
 </div>
 <!-- #footer -->
 {widget('metrika')}
