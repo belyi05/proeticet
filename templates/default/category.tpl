@@ -7,13 +7,14 @@
 <p>{$no_pages}</p>
         {/if}
         {foreach $pages as $page}
+        {widget('rating')}
 <div class="post">
 <h2><a href="{site_url($page.full_url)}">{$page.title}</a></h2>
         <span class="post-pub-info">
 
             Раздел: <a href="{site_url($page.cat_url)}">{get_category_name($page.category)}</a>
 			{if $tags = page_tags($page.id)} | Теги: {foreach $tags as $tag}
-               d <a href="{site_url('tags/search/'.$tag.value)}">{$tag.value}</a>
+               <a href="{site_url('tags/search/'.$tag.value)}">{$tag.value}</a>
             {/foreach}{/if}
         </span>
 
