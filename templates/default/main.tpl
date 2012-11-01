@@ -15,6 +15,10 @@
     <link rel="stylesheet/less" type="text/css" href="{$THEME}/css/styles.less">
     <script src="http://lesscss.ru/js/less.js" type="text/javascript"></script>
     <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon"/>
+
+    {literal}
+    <?php echo "sdf" ;?>
+    {/literal}
 </head>
 <body>
 <div id="wrapper">
@@ -45,7 +49,9 @@
 
                 </div>
 
-                    {$content} {literal} <?php
+                    {$content}
+
+                {widget('rating')}{literal} <?php
                         if($_SERVER['REQUEST_URI']=='/5_kak_zavyazat_sharf.html') {include ("php/image.php");  my_image(61);}
                         if($_SERVER['REQUEST_URI']=='/5_kak_zavyazat_platok.html') {include ("php/image.php");  my_image(94);}
                         echo str_replace(array ("\r", "\n"),'',$content); ?>

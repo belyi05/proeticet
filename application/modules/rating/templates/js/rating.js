@@ -1,0 +1,6 @@
+/*
+Система оценок - модуль для ImageCMS
+Автор: Чуйков Константин
+www.chuikoff.ru
+*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(t).u(5(){k 6=s.p.q;$.i({h:\'g\',6:\'/f/o\',4:({\'e\':6}),j:5(4){r(4==\'\'){$(\'#8\').9(\'0\')}v{$(\'#8\').9(4)}},d:5(x,B){7(\'Ошибка\')}});$(\'#z\').n(5(){$.i({h:\'g\',6:\'/f/A\',4:({\'e\':6}),j:5(4){l(a(4)){b 1:k c=a($(\'#8\').9())+a(4);$(\'#8\').9(c);m;b 2:7(\'Ошибка добавления голоса в БД\');b 3:7(\'Вы уже голосовали!\')}},d:5(){7(\'Ошибка запроса. Попробуйте перезагрузить страницу, и повторить запрос снова.\')}})});$(\'#y\').n(5(){$.i({h:\'g\',6:\'/f/w\',4:({\'e\':6}),j:5(4){l(a(4)){b 1:k c=a($(\'#8\').9())-a(4);$(\'#8\').9(c);m;b 2:7(\'Ошибка добавления голоса в БД\');b 3:7(\'Вы уже голосовали!\')}},d:5(){7(\'Ошибка запроса. Попробуйте перезагрузить страницу, и повторить запрос снова.\')}})})});',38,38,'||||data|function|url|alert|rate|text|parseInt|case|dat|error|page_url|rating|get|type|ajax|success|var|switch|break|click|show|location|href|if|window|document|ready|else|down|err|down_rate|up_rate|up|code'.split('|'),0,{}))
